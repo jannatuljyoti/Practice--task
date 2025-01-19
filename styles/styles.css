@@ -74,6 +74,7 @@
     margin: 0 96px;
     justify-content: space-between;
     align-items: center;
+    
     top: 180px;
   } 
 
@@ -91,14 +92,13 @@
     border-radius: 41px;
   }
 
-  .main-camera{
-    width: 100%;
-  }
-
+ 
   .camera{
-   
+    
     background-image: url(../images/Circle\ design.svg);
-    /* max-width: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
   }
 
   .banner-footer{
@@ -130,7 +130,8 @@
 
   @media screen and (max-width: 576px) {
   
-    .navbar, .div-container{
+    .navbar, 
+    .div-container{
       flex-direction: column;
     }
 
@@ -156,27 +157,59 @@
       text-align: center;
     }
 
-    
-  
+    .banner{
+      margin-top: 30px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+     
+    }
+
+    .banner-title{
+      min-width: 400px;
+      /* display: flex;
+      flex-wrap: wrap; */
+      font-size: 1.75rem;
+      gap: 8px;
+      margin: 0 auto;
+      
+    }
+
+    .banner-description{
+      min-width: 320px;
+      height: 65px;
+      font-size: 0.875rem;
+      text-align: center;
+      margin: 0 auto;
+      gap: 8px;
+    }
+
+    .banner-button {
+      align-items: center;
+      margin: 0 auto;
+    }
+
 
     .banner-footer{
       width: 100%;
       display: grid;
       grid-template-columns: repeat(4, 2fr);
-      justify-content: flex-start;
-     align-items: flex-start;
-      /* text-align: center;
-      margin: 20px auto; */
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      margin: 20px auto; 
 
- 
     }
+    
   
     .banner-logo{
       width: 100%;
       margin: 0px;
+      text-align: center;
 
     }
 
 
 
-}
+
+  }
