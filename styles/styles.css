@@ -1,0 +1,182 @@
+/* font styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400px;
+    font-style: normal;
+  }
+  
+  
+  
+  
+
+  /* shared styles */
+
+  .display-flex{
+    display: flex;
+  }
+
+  .text-color{
+    color: rgb(58, 58, 58);
+  }
+
+  .btn-primary{
+    background-color: rgb(224, 44, 109);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8;
+    padding: 10px 24px 10px 24px;
+    border: none;
+
+
+  }
+
+  .button-text{
+    color: rgb(255, 255, 255);
+  }
+
+  /* header styles */
+
+  .nav-titles{
+    font-size: 1.5rem;
+    font-weight: 700px;
+  }
+
+  .navbar{
+    max-width: 1300px;
+   justify-content: space-between;
+   margin: 70px auto;
+  }
+
+  .nav-links{
+    gap: 34px;
+  }
+
+  .nav-item{
+    list-style: none;
+   
+  }
+
+  .nav-link{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600px;  
+
+  }
+
+  .div-container{
+    margin: 0 96px;
+    justify-content: space-between;
+    align-items: center;
+    top: 180px;
+  } 
+
+  .banner-title{
+    font-weight: 700px;
+    font-size: 3.25rem;
+  }
+
+  .banner-description{
+    font-size: 1rem;
+    font-weight: 600px;
+  }
+
+  .banner-button{
+    border-radius: 41px;
+  }
+
+  .main-camera{
+    width: 100%;
+  }
+
+  .camera{
+   
+    background-image: url(../images/Circle\ design.svg);
+    /* max-width: 100%; */
+  }
+
+  .banner-footer{
+    /* width: 1110px; */
+    max-width: 1120px;
+    height: 110px;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px auto;
+    
+  }
+
+  
+  
+  .banner-logo{
+    max-width: 100%;
+    padding: 0 30px;
+    
+    /* gap: 20px; */
+  } 
+
+  
+
+
+  /* responsive media query */
+
+  @media screen and (max-width: 576px) {
+  
+    .navbar, .div-container{
+      flex-direction: column;
+    }
+
+
+
+    .div-container{
+      flex-direction: column-reverse;
+
+    }
+    
+    
+    .nav-titles{
+      /* display: flex; */
+      /* flex-direction: row; */
+      justify-content: center;
+      text-align: center;
+        
+    }
+
+    .nav-links{
+      /* display: flex; */
+      flex-direction: column;
+      text-align: center;
+    }
+
+    
+  
+
+    .banner-footer{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 2fr);
+      justify-content: flex-start;
+     align-items: flex-start;
+      /* text-align: center;
+      margin: 20px auto; */
+
+ 
+    }
+  
+    .banner-logo{
+      width: 100%;
+      margin: 0px;
+
+    }
+
+
+
+}
