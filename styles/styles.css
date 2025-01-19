@@ -96,25 +96,27 @@
   .camera{
     
     background-image: url(../images/Circle\ design.svg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     
   }
 
   .banner-footer{
     /* width: 1110px; */
-    max-width: 1120px;
+    max-width: 1200px;
     height: 110px;
     border-top: 1px solid #d3d3d3;
     border-bottom: 1px solid #d3d3d3;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    text-align: center;
     margin: 100px auto;
+    gap: 30px;
     
   }
 
-  
+  .footer-logo{
+    min-width: 80px;
+  }
   
   .banner-logo{
     max-width: 100%;
@@ -122,6 +124,43 @@
     
     /* gap: 20px; */
   } 
+
+  /* main section style/ */
+
+  .box{
+    max-width: 1047px ;
+    height: 1662px;
+    display: grid;
+    padding: 0px 197px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    
+  }
+
+  .box-title{
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 30px;
+   
+  
+  }
+
+  .box-primary{
+    justify-content: left;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    padding-left: 14px;
+  }
 
   
 
@@ -176,21 +215,25 @@
     }
 
     .banner-description{
-      min-width: 320px;
-      height: 65px;
+      max-width: 400px;
+      /* height: 65px; */
+      display: flex;
+      flex-wrap: wrap;
       font-size: 0.875rem;
+      justify-content: center;
       text-align: center;
-      margin: 0 auto;
+      margin: 30px auto;
       gap: 8px;
     }
 
     .banner-button {
       align-items: center;
-      margin: 0 auto;
+      margin: 30px auto;
+      
     }
 
 
-    .banner-footer{
+    /* .banner-footer{
       width: 100%;
       display: grid;
       grid-template-columns: repeat(4, 2fr);
@@ -199,7 +242,16 @@
       justify-items: center;
       margin: 20px auto; 
 
-    }
+    } */
+
+  .banner-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    gap: 10px;
+  }
     
   
     .banner-logo{
