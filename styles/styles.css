@@ -153,7 +153,12 @@
   
   }
 
+  /* .box-image{
+    width: 100%;
+  } */
+
   .box-primary{
+    max-width:329px ;
     justify-content: left;
     text-align: left;
     border-radius: 5px;
@@ -162,7 +167,68 @@
     padding-left: 14px;
   }
 
-  
+  .more{
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(224, 44, 109, 0.87);
+    text-align: right;
+  }
+
+
+  /* Freatured Product style */
+
+  .featured{
+    max-width: 1110px;
+    
+    margin: 100px 165px;
+    /* top: 100px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 90px;
+  }
+
+  .gear-image{
+    max-width: 100%;
+    /* width: 404px;
+    height: 270px; */
+    border-radius: 7px;
+  }
+
+  .featured-products{
+    /* width: 610px;
+    height: 224px; */
+    display: grid;
+    /* flex-wrap: wrap ; */
+    justify-content: left;
+    text-align: left;
+
+  }
+
+  .featured-title{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: rgb(10, 8, 38);
+  }
+
+  .featured-description{
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(108, 108, 108);
+    margin: 16px 0px;
+  }
+
+  .featured-button{
+    width: 155px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+
+
 
 
   /* responsive media query */
@@ -170,13 +236,13 @@
   @media screen and (max-width: 576px) {
   
     .navbar, 
-    .div-container{
+    .div-container, .featured{
       flex-direction: column;
     }
 
 
 
-    .div-container{
+    .div-container, .featured{
       flex-direction: column-reverse;
 
     }
@@ -244,14 +310,14 @@
 
     } */
 
-  .banner-footer{
+    .banner-footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
     gap: 10px;
-  }
+    }
     
   
     .banner-logo{
@@ -261,7 +327,44 @@
 
     }
 
+  
 
+    .box-container{
+      width: 100%;
+      display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+    }
 
+  
 
+  /* .featured{
+   margin: 20px 20px;
+   padding: 20px auto;
   }
+
+   .featured-title{
+  font-size: 1.5rem;
+  font-weight: 700px;
+   text-align: center;
+  }
+
+  .featured-description{
+  
+  font-size: 1rem;
+ font-weight: 700px;
+ text-align: center;
+ }
+
+ .gear-image{
+  width: 100%;
+  
+  left: 30px;
+  right: 31px;
+  } */
+
+
+  
+}
